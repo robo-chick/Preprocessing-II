@@ -168,28 +168,47 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.nav-content {
-  border-bottom: 1px dashed #C0C0C0;
+@media (max-width: 500px) {
+  .container {
+    width: 85%;
+  }
 }
-.nav-content .nav-left {
-  display: flex;
-  justify-content: flex-start;
-  width: 50%;
-  margin: 1%;
-  border: 1px solid;
+nav {
+  border: 1px dashed #C0C0C0;
+  height: 70px;
 }
-.nav-content .nav-right {
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-  border: 1px solid;
+nav .left {
+  float: left;
+  padding-top: 1%;
+  margin-left: 24%;
 }
-.nav-content .nav-right a {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
+@media (max-width: 500px) {
+  nav .left {
+    margin-left: 30%;
+  }
+}
+nav .right {
+  float: right;
+  padding-top: 2%;
+  margin-right: 21%;
+  width: 20%;
+}
+@media (max-width: 500px) {
+  nav .right {
+    width: 70%;
+    margin-right: 15%;
+  }
+}
+nav a {
   color: black;
+  font-size: 1.5rem;
   text-decoration: none;
-  margin: 2%;
+  margin: 3%;
+}
+@media (max-width: 500px) {
+  nav a {
+    text-align: center;
+  }
 }
 .btn {
   border: 1px solid #17A2B8;
