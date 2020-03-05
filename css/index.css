@@ -168,6 +168,33 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navbar {
+  border: 1px dashed #C0C0C0;
+}
+.navbar .nav-left {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3%;
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  .navbar .nav-left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.navbar .nav-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3%;
+}
+.navbar .nav-right a {
+  margin: 0 3% 2% 2%;
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
