@@ -168,31 +168,28 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.navbar {
-  border: 1px dashed #C0C0C0;
+.nav-content {
+  border-bottom: 1px dashed #C0C0C0;
 }
-.navbar .nav-left {
+.nav-content .nav-left {
   display: flex;
   justify-content: flex-start;
-  margin-left: 3%;
-  padding-top: 2%;
+  width: 50%;
+  margin: 1%;
+  border: 1px solid;
 }
-@media (max-width: 500px) {
-  .navbar .nav-left {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.navbar .nav-right {
+.nav-content .nav-right {
   display: flex;
   justify-content: flex-end;
-  margin-right: 3%;
+  width: 50%;
+  border: 1px solid;
 }
-.navbar .nav-right a {
-  margin: 0 3% 2% 2%;
+.nav-content .nav-right a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
   color: black;
-  font-size: 1.4rem;
   text-decoration: none;
+  margin: 2%;
 }
 .btn {
   border: 1px solid #17A2B8;
