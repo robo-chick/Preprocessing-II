@@ -164,13 +164,18 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
   .container {
     width: 85%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
   }
 }
 nav {
@@ -187,6 +192,12 @@ nav .left {
     margin-left: 30%;
   }
 }
+@media (max-width: 800px) {
+  nav .left {
+    padding-top: 2.5%;
+    margin-left: 15%;
+  }
+}
 nav .right {
   float: right;
   padding-top: 2%;
@@ -197,6 +208,13 @@ nav .right {
   nav .right {
     width: 70%;
     margin-right: 15%;
+  }
+}
+@media (max-width: 800px) {
+  nav .right {
+    width: 35%;
+    padding-top: 4%;
+    margin-right: 10%;
   }
 }
 nav a {
@@ -215,11 +233,18 @@ nav a {
   background-color: #17A2B8;
   height: 15%;
   width: 80%;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   color: white;
   font-size: 1.5rem;
   text-align: center;
   padding-top: 4%;
+}
+@media (max-width: 500px) {
+  .btn {
+    height: 15%;
+    width: 100%;
+    padding-bottom: 3%;
+  }
 }
 .footer {
   width: 100%;
